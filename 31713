@@ -1,0 +1,176 @@
+#include <iostream>
+using namespace std;
+int main (){
+	
+	int option,proof,crush,rest,old,reset;
+	int phone,amount,select,balance,retry;
+string pin="0000";
+
+	cout<<"Enter your pin to verify that you are the user:"<<endl;
+	cin>>pin;
+
+ if (pin=="0000"){
+ 
+ 
+ 
+ 
+ 
+cout <<"Your account is authenticated"<<endl;
+	cout <<"Enter Option"<<endl;
+
+	cout<<"1.Reseting/Changing Pin"<<endl;
+	cout<<"2.Checking Balance"<<endl;
+	cout<<"3.Sending Money"<<endl;
+	cout<<"4.Exit"<<endl;
+
+
+	cin >>option;
+}
+ else if(pin!="0000"){
+ 
+ 
+
+
+	 
+	 
+	 cout<<"verify again"<<endl;
+
+}
+ if (option==1){
+
+
+	cout<<"ARE YOU SURE YOU WANT TO RESET YOUR PIN?"<<endl;
+	cout <<"Press 1 if YES"<<endl;
+	cout <<"Press any key aside 1 to Cancel "<<endl;
+	cin >>rest;
+}
+if (rest==1){
+
+
+
+
+
+	cout<<"Enter old pin"<<endl;
+	cin>>old;
+	cout<<"Enter new pin"<<endl;
+	cin>>reset;
+	cout <<"Your pin has successfully been reset from "<<old<<" to " <<reset<<endl;
+ if(rest!=1)
+
+
+  cout<<"process cancelled"<<endl;
+
+}
+
+else if(option==2){
+	cout<<"Enter your mobile money pin"<<endl;
+
+cin>>pin;
+
+if (pin == "0000")
+
+
+	cout <<"Your balance is GH1000"<<endl;
+
+
+
+  if(pin!="0000")
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+      	cout <<"Invalid Momo Pin"<<endl;
+	cout<<"Enter your mobile money pin 2 more to continue"<<endl;
+	cin>>pin;
+
+	 if(pin!="0000")
+	 
+	 
+	 
+		
+
+			cout<<"Re-enter your mobile money pin"<<endl;
+			cin>>pin;
+		
+		
+		if(pin!="0000")
+		
+		cout <<"Process exit"<<endl;
+
+if (pin=="0000")
+
+
+
+
+
+
+cout <<"Your balance is GH1000"<<endl;
+
+}
+else if(option==3){
+	cout <<"Enter Receiver's Phone Number"<<endl;
+	cin>>phone;
+	cout <<"Re-Enter Phone Number"<<endl;
+	cin >>phone;
+
+	
+	cout <<"Enter Amount"<<endl;
+	cin>>amount;
+	cout<<"Are your sure you want to send " << amount << " to " <<phone<<endl;
+	cout<<"Select 1 if Yes"<<endl;
+	cout<<"Select 2 if No"<<endl;
+
+		cin>>select;
+ 
+
+}
+
+if (select==1){
+
+
+
+
+
+
+
+	cout <<"You have made "<<amount<< " to "<< phone<<endl;
+	balance=1000-amount;
+	cout <<"Your balance is "<<balance<<endl;
+}
+ if (select==2){
+ 
+ 
+ 
+ 
+ 
+	cout <<"Transaction is cancelled"<<endl;
+
+
+ 
+
+}
+else if (option==4){
+	cout<<"Process exit"<<endl;
+}
+
+else if((option <1)||(option>4)){
+	cout<<"Invalid"<<endl;
+	cout <<"Process exit:YOU CAN TRY AGAIN"<<endl;
+}
+
+	return 0;
+	
+}
+
+
